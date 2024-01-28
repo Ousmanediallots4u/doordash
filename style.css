@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+header {
+   
+  
+  
+   
+}
+.nav-container {
+   background-color: rgb(227, 163, 163);
+    
+    display: flex;
+   
+    justify-content: space-around;
+    color: #fff;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.nav-logo img {
+    width: 200px;
+    height: 50px;
+    border: 2px solid blue;
+    margin-top: 10px;
+}
+
+.nav-button button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.nav-button .sign-in {
+    background-color: red;
+    color: #fff;
+}
+
+.nav-button .sign-up {
+    background-color: #fff;
+    color: black;
+}
+@media screen  and (max-width: 400px){
+    .nav-button button {
+        margin-bottom: 10px;
+    }
+}
+
+html, body {
+    height: 100%;
+
+}
+.home-page {
+    height: 100vh;
+    background: url(../images/doordash-blog-header.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.home-page h1 {
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+   padding-top: 20px;
+   
+}
+
+.second-anchor {
+    margin-left: 41%;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 60px;
+    
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 50%;
+    background: #f1f1f1;
+    margin-left: 20%;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: red;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+@media screen  and (max-width:687px){
+    .home-page {
+        min-height: 30vh;
+   }
+}
+/* =======================Dasher Container================= */
+
+.dasher-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+}
+
+.grid {
+    text-align: center;
+}
+
+.grid h2 {
+    font-size: 20px;
+    font-weight: 900;
+    width: 50%;
+    text-align: center;
+    margin-left: 24%;
+    margin-top: 10px;
+}
+
+.grid p {
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 10px;
+}
+.grid a {
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+}
+
+@media screen  and (max-width: 500px){
+    .dasher-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid a {
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+/* ===========================+Find Restaurants=================== */
+
+.restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15%;
+    margin:  5%;
+}
+
+
+.grid-1 .moving {
+    margin-top: 30%;
+    width: 75%;
+}
+
+.grid-1 .moving h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.grid-1 .moving h4 {
+    font-weight: 900;
+}
+.grid-1 .moving p {
+    margin-bottom: 30px;
+}
+.grid-1 img {
+    border-radius: 5px;
+}
+.grid-1 .moving a, .grid-2 .movings a {
+    background-color: red;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 60px;
+  
+}
+
+@media screen  and (max-width: 1066px){
+    .grid-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    
+}
+@media screen and (max-width: 756px){
+    .restaurant-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-1 .moving {
+        text-align: center;
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen  and (max-width:493px){
+    .grid-1 img {
+        width: 84%;
+        height: 70%;
+        margin-left: 5%;
+       
+    }
+    
+}
+
+
+/* ===================+Dashpass==================== */
+
+
+.dashpass-container {
+    display:  grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5% 0;
+    background-color: rgb(239, 221, 224);
+    
+    
+}
+.grid-2 {
+    margin: 0 10%;
+}
+.grid-2 .dash-image {
+    width: 110%;
+    height: 100%;
+}
+.grid-2 .movings {
+    width: 75%;
+    margin-top: 20%;
+}
+.grid-2 .movings h1 {
+    font-size: 35px ;
+    font-weight: 900;
+}
+
+.grid-2 .movings p {
+    margin-bottom: 40px;
+}
+
+@media screen  and (max-width: 583px){
+    .dashpass-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-2 .dash-image {
+        margin-left: -10px;
+    }
+
+    .grid-2 .movings {
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    
+}
+
+
+/* =================================Shop Groceries================ */
+
+
+
+.background-image {
+    background-image: url('../images/background-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+h1 {
+    margin: 0.5em 0;
+    font-weight: 900; 
+}
+.content h3 {
+    font-size: 20px;
+}
+p {
+    margin: 0.5em 0; 
+}
+.content a {
+    background-color: red;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 60px;
+}
+
+
+
+/* =====================Gifftting================== */
+.giftting {
+    text-align: center;
+    background-color: rgb(239, 221, 224);
+    padding: 20px;
+}
+.gift-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+.gift-layout .gift-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 2%;
+}
+
+.gift-grid {
+    margin-top: 5%;
+}
+
+.gift-grid h2, .gift-grid p, .gift-grid a, .gift-grid h6 {
+    margin: 0 auto; 
+    width: auto; 
+    max-width: 90%; 
+}
+.gift-grid h2 {
+    margin-top: 20px;
+}
+.gift-grid p {
+    margin: 20px;
+}
+.gift-grid a {
+    background-color: red;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 60px;
+    color: #fff;
+   
+}
+.gift-grid h6 {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .gift-layout {
+        grid-template-columns: 1fr; 
+    }
+}
+/* ====================Become a dasher=============== */
+
+.become-a-dasher {
+    text-align: center;
+}
+.become-a-dasher .h1-tag {
+    margin-top: 20px;
+} 
+
+
+/* =============================Top Cities================== */
+.cities-container {
+    text-align: center;
+
+}
+.cities-container h1 {
+    margin-top: 40px;
+}
+.ul-container-list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 40px;
+   
+}
+
+.ul-container-list ul a {
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px 1px red;
+
+}
+
+.ul-container-list ul a:hover {
+    border-bottom: 2px solid  red;
+    padding-bottom: 5px;
+    transition: ease-in-out 0.5s;
+    
+
+}
+
+.cusines-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 2% 5%;
+    gap: 3%;
+}
+.cusines-container h2 {
+    font-size: 1rem;
+}
+
+@media screen  and (max-width: 725px){
+    .cusines-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media screen  and (max-width: 500px){
+    .cusines-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     justify-content: space-around;
+    }
+    
+}
+
