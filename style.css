@@ -458,3 +458,122 @@ p {
     
 }
 
+/* ====================footer starts================ */
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding-top: 2px;
+}
+.categories {
+    margin-left: 5%;
+   
+}
+.categories h3 {
+    margin-top: 70px !important;
+}
+
+.popular {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-category ul {
+    list-style: none;
+}
+.container-category ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-category ul li a:hover {
+    border-bottom: 2px dashed #fff;
+    transition: ease-in-out 0.5s;
+}
+
+.knows-us ul{
+  display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    list-style: none;
+    margin: 20px 40px;
+    font-size: 20px !important;
+    flex-wrap: wrap;
+   
+   
+}
+.knows-us ul li {
+    font-size: 10px;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-list {
+    margin:0 40px;
+    
+}
+
+.sub-list ul {
+    list-style: none;
+}
+
+.sub-list ul li a {
+    color: rgb(198, 195, 195);
+    text-decoration: none;
+}
+
+.sub-list ul li a:hover {
+    border-bottom: 2px solid rgb(198, 195, 195);
+    transition: ease-in 0.5s;
+}
+.sub-list img {
+    width: 10rem;
+    height: 3rem;
+}
+
+.sub-list .second img {
+    width: 12rem;
+    height: 5rem;
+    margin-right: 23px;
+}
+
+@media screen  and (max-width: 880px){
+    .sub-list img {
+        margin-right: 40px;
+    }
+
+    .popular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
+
+@media screen  and (max-width: 450px){
+    .sub-list img {
+        margin-right: 40px;
+    }
+
+    .popular {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .list-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .categories h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+  
+}
